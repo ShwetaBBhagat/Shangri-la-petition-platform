@@ -1,12 +1,12 @@
 # Shangri-la-petition-platform
 The Shangri-La Petition Platform (SLPP) allows citizens to create or sign petitions. Once a petition meets a signature threshold, it qualifies for parliamentary debate. The Petitions Committee then responds before officially closing it.
 
-##Overview
+## Overview
 The Shangri-La Petition Platform (SLPP) is a web application that allows citizens to create,
 manage, and sign petitions. It also includes an admin interface for overseeing petition activities,
 including setting thresholds and responding to petitions.
 
-Requirements
+## Requirements
 To successfully run this project, ensure you have the following:
 • Python 3.8 or higher
 • Flask framework
@@ -19,7 +19,7 @@ o flask_bcrypt
 o flask_login
 o requests
 
-Tools
+## Tools
 • Backend:
 o Flask: Python-based web framework for routing and backend logic.
 o SQLAlchemy: ORM for database modeling and management.
@@ -30,18 +30,18 @@ o Flask-Login: User session management.
 • Database: SQLite
 • Other Tools: Postman(optional) for API Testing
 
-Database Setup (if required)
+## Database Setup (if required)
 flask shell
 >>> from app import db
 >>> db.create_all()
 >>> exit()
 
-To Run the Application
+## To Run the Application
 • python app.py
 • Open your web browser and go to:
 • http://127.0.0.1:5000/
 
-Features
+## Features
 Petitioner
 1. User Registration
 a. BioID Users can register using their email, name, date of birth, password, and a valid
@@ -68,7 +68,7 @@ APIs
 • RESTful APIs for petition listing, details, and signature retrieval.
 • Open data API endpoints for public consumption.
 
-File Structure
+## File Structure
 • app.py: Main application logic and route definitions.
 • test_register.py: Automated tests for user registration, login, petition creation, and admin
 functionality.
@@ -76,7 +76,7 @@ functionality.
 • templates/: HTML templates for rendering web pages.
 • static/: Static files (CSS, JS).
 
-Testing
+## Testing
 • To run tests, execute the test_register.py script: python test_register.py
 • Make sure that the main file i.e. app.py should be kept running while running the
 test_register.py.
@@ -86,10 +86,10 @@ test_register.py.
 3. http://127.0.0.1:5000/api/petitions/5/signatures (Method GET)
 And many others.
 
-Known Issues
+## Known Issues
 • Ensure the VALID_BIO_IDS list is up to date.
 • Only unique email addresses and BioIDs are allowed.
 
-Key Points
+## Key Points
 Remember that the port no. 5000 should be free and open in your system to work easily.
 All the necessary libraries should be installed before running the program.
