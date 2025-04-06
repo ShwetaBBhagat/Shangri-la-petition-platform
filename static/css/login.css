@@ -1,0 +1,68 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Box Styling */
+.login-box {
+    background: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.login-box h2 {
+    font-size: 1.8rem;
+    color: #2575fc;
+}
+
+.login-box .btn-primary {
+    background-color: #2575fc;
+    border-color: #2575fc;
+    transition: background-color 0.3s ease;
+}
+
+.login-box .btn-primary:hover {
+    background-color: #6a11cb;
+    border-color: #6a11cb;
+}
+
+/* Links */
+.login-box a {
+    color: #2575fc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.login-box a:hover {
+    color: #6a11cb;
+}
+
+/* Input Fields */
+.login-box .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.login-box .form-label {
+    color: #666;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-box {
+        padding: 20px;
+    }
+}

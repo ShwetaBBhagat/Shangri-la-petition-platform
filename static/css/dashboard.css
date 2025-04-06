@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Content */
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #2575fc;
+    margin-bottom: 20px;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body .btn-primary {
+    background-color: #6a11cb;
+    border-color: #6a11cb;
+    transition: background-color 0.3s ease;
+}
+
+.card-body .btn-primary:hover {
+    background-color: #2575fc;
+    border-color: #2575fc;
+}
+
+/* Table Styling */
+.table {
+    color: #333;
+}
+
+.table th {
+    background-color: #6a11cb;
+    color: #fff;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+}
